@@ -15,8 +15,13 @@
   },
   "dependencies": {
     "axios": "^0.17.1",
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.5.1",
+    "joi": "^13.0.2",
+    "jsonwebtoken": "^8.1.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuetify": "^0.17.6"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

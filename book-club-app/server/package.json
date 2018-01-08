@@ -11,11 +11,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "eslint": "^4.13.1",
     "express": "^4.16.2",
     "morgan": "^1.9.0",
-    "nodemon": "^1.14.1"
+    "nodemon": "^1.14.1",
+    "sequelize": "^4.28.6",
+    "sqlite3": "^3.1.8",
+    "vuetify": "^0.17.6"
   }
 }
