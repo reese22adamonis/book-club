@@ -1,8 +1,11 @@
 import Api from '@/services/Api'
 
 export default {
-  getBooks () {
+  index () {
     return Api().get('books')
+  },
+  show (bookId) {
+    return Api().get(`books/${bookId}`)
   },
   post (book) {
     return Api().post('books', book)

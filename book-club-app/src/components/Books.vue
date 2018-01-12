@@ -14,29 +14,44 @@
 
 
         <div v-for="book in books" :key="book.id">
-<!-- 
+
           <v-layout>
-            <v-flex xs6>
-              <div>
+            <v-flex xs2>
+              <div class="bookTitle">
                 {{book.title}}
               </div>
 
-              <div>
+              <v-btn class="navigateToSong"
+               :to="'books/'+book.id">
+                Show
+              </v-btn>
+
+
+            </v-flex>
+            <v-flex xs6>
+              <div class="bookAuthor">
                 {{book.author}}
               </div>
 
-              <div>
+              <div class="bookGenre">
                 {{book.genre}}
+              </div>
+
+              <div class="bookPublisher">
+                {{book.publisher}}
+              </div>
+
+              <div class="bookReleaseDate">
+                {{book.releaseDate}}
               </div>
             </v-flex>
 
             <v-flex xs6>
-
+              <img class="bookImage" :src="book.bookImage" />
             </v-flex>
-          </v-layout> -->
+          </v-layout>
 
-
-          {{book.title}}
+          <!-- {{book.title}}
           |
           {{book.author}}
           |
@@ -52,7 +67,7 @@
           |
           {{book.summary}}
           |
-          {{book.description}}
+          {{book.description}} -->
         </div>
       </panel>
     </v-flex>
@@ -86,7 +101,7 @@ export default {
   //   }
   // },
     async mounted () {
-      this.books = (await BooksService.getBooks()).data
+      this.books = (await BooksService.index()).data
     }
   }
 
@@ -94,4 +109,15 @@ export default {
 </script>
 
 <style scoped>
+
+.bookImage {
+    width: 65%;
+    height: 275px;
+  }
+
+.bookTitle {
+    font-size: 20px;
+  }
+
+
 </style>
