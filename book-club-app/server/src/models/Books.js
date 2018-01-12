@@ -6,10 +6,11 @@
       genre: DataTypes.STRING,
       publisher: DataTypes.STRING,
       releaseDate: DataTypes.STRING,
-      bookImage: DataTypes.STRING,
-      audioBook: DataTypes.STRING,
-      summary: DataTypes.TEXT,
-      description: DataTypes.TEXT
+      bookImage: DataTypes.STRING
+      // audioBook: DataTypes.STRING,
+      // summary: DataTypes.TEXT,
+      // description: DataTypes.TEXT
+      //not yet ^^
   })
 
   return Book

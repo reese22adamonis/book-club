@@ -13,7 +13,10 @@ module.exports = (app) => {
     AuthenticationController.login)
 
   app.get('/books',
-    BooksController.getBooks)
+    BooksController.index)
+
+  app.get('/books/:bookId',
+    BooksController.show)
 
   app.post('/books',
     BooksController.post)

@@ -11,7 +11,7 @@ const sequelize = new Sequelize(
   config.db.options
 )
 
-// 14-22 is helpful but nt needed rn
+// 16-24 is helpful but nt needed rn
 
 fs
   .readdirSync(__dirname)
